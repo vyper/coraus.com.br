@@ -1,0 +1,9 @@
+site:
+  build: .
+  command: bash -c "middleman build && middleman server --bind-address 0.0.0.0"
+  volumes:
+    - .:/usr/src/app
+  ports:
+    - "4567:4567"
+  expose:
+    - "4567"
