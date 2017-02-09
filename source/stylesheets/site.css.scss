@@ -74,16 +74,20 @@ body {
         border-left: 6px solid $blue;
         padding: 10px 10px;
         height: 50px;
+
+        span {
+          display: none;
+        }
       }
 
-      input {
+      input[type="text"], input[type="email"] {
         border: 0;
         height: 50px;
         border-bottom: 1px solid $gray;
         width: 85%;
       }
 
-      button {
+      input[type="submit"] {
         border-radius: 40px;
         -moz-border-radius: 40px;
         -webkit-border-radius: 40px;
