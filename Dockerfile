@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive TERM=xterm-color
 RUN apt-get update
 
 # Install build tools
-RUN apt-get install -y build-essential chrpath libssl-dev libxft-dev nodejs curl
+RUN apt-get install -y build-essential chrpath libssl-dev libxft-dev nodejs curl git
 
 # Install phantomjs for UAT
 RUN apt-get install -y libfreetype6 libfreetype6-dev libfontconfig1 libfontconfig1-dev
